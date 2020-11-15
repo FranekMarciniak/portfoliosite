@@ -43,6 +43,7 @@ module.exports = {
         display: "swap",
       },
     },
+    `gatsby-plugin-compression`,
     // {
     //   resolve: "gatsby-source-graphql",
     //   options: {
