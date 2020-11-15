@@ -5,7 +5,6 @@ module.exports = {
     author: `Franciszek Marciniak`,
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -51,6 +50,7 @@ module.exports = {
         algorithm: "gzip",
       },
     },
+        'gatsby-plugin-netlify-cms'
     // {
     //   resolve: "gatsby-source-graphql",
     //   options: {
