@@ -43,7 +43,13 @@ module.exports = {
         display: "swap",
       },
     },
-    `gatsby-plugin-compression`,
+    {
+      resolve: `gatsby-plugin-compression-v2`,
+      options: {
+        asset: "[path].gz[query]",
+        algorithm: "gzip",
+      },
+    },
     // {
     //   resolve: "gatsby-source-graphql",
     //   options: {
