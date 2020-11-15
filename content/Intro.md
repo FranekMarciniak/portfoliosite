@@ -1,4 +1,4 @@
 ---
-title: About me
+title: Hey, my name is Franek
 ---
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in velit, totam vero saepe consectetur harum ducimus obcaecati odio illo explicabo! Autem nisi aliquid vel ad nobis nemo recusandae dignissimos! vero saepe consectetur harum ducimus obcaecati odio illo explicabo! Autem nisi aliquid vel ad nobis nemo recusandae dignissimos!
+Thanks for visting my page! Below you can find information about me and my projects. If you wanna contact me, shoot me an email. Have a great day
