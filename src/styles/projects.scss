@@ -23,7 +23,9 @@
   min-width: 300px;
   height: 420px;
 }
-
+.someting {
+  width: 100%;
+}
 @media only screen and (max-width: 1050px) {
   .projects__wrapper {
     width: 75%;
@@ -39,7 +41,13 @@
   .projects__wrapper {
     width: 90%;
   }
+  .someting {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .projects__grid {
+    width: 70%;
     grid-template-columns: 100%;
     grid-row-gap: 20px;
   }
@@ -52,6 +60,18 @@
   .projects__item {
     max-width: 370px;
     min-width: 300px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .someting {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .projects__grid {
+    width: 90%;
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
   }
 }
 @media only screen and (max-width: 550px) {
