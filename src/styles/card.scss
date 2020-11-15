@@ -40,7 +40,8 @@
 
 @media only screen and (max-width: 850px) {
   .card {
-    min-height: 500px;
+    width: 410px;
+    height: 500px;
   }
   .card__image__wrapper {
     height: 70%;
@@ -49,16 +50,15 @@
     margin-top: 25px;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 500px) {
   .card {
-    min-height: 350px;
-  }
-  .card__image__wrapper {
-    height: 50%;
+    width: 310px;
+    height: 400px;
   }
 }
-@media only screen and (max-width: 400px) {
-  .card__image__wrapper {
-    height: 40%;
+@media only screen and (max-width: 370px) {
+  .card {
+    width: 270px;
+    height: 350px;
   }
 }
