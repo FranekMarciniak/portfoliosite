@@ -8,9 +8,40 @@ public_folder: /img
 collections:
   - name: "intro"
     label: "Intro"
-    folder: "content/"
+    folder: "content/intro"
     create: true
     slug: "Intro"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "about"
+    label: "About"
+    folder: "content/about"
+    create: true
+    slug: "About"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tech"
+    label: "Tech"
+    folder: "content/about"
+    create: true
+    slug: "Tech"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "contact"
+    label: "Contact"
+    folder: "content/about"
+    create: true
+    slug: "Contact"
     editor:
       preview: false
     fields:
