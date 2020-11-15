@@ -1,8 +1,42 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "franek",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "personal website",
   "version": "0.1.0",
+  "author": "Franek Marciniak <franciszekmarciniak@protonmail.com>",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@mdx-js/mdx": "^1.6.21",
+    "@mdx-js/react": "^1.6.21",
+    "gatsby": "^2.25.3",
+    "gatsby-image": "^2.4.21",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.5.2",
+    "gatsby-plugin-mdx": "^1.4.0",
+    "gatsby-plugin-offline": "^3.3.3",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-sass": "^2.5.0",
+    "gatsby-plugin-sharp": "^2.7.1",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-source-graphql": "^2.8.0",
+    "gatsby-transformer-sharp": "^2.5.21",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
@@ -12,20 +46,5 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "dependencies": {
-    "gatsby": "^2.25.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {
-    "prettier": "2.1.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

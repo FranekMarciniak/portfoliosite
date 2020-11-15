@@ -1,0 +1,47 @@
+$black-background: #252525;
+body {
+  height: 300vh;
+  background-color: $black-background;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+h2 {
+  font-size: 42px;
+}
+h3 {
+  font-size: 26px;
+}
+.btn {
+  background-color: #ffc700;
+  width: 180px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.text--subtitle {
+  font-size: 14px;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}

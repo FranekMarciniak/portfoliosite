@@ -1,0 +1,27 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  padding: 10px;
+}
+.about__wrapper {
+  width: 65%;
+  max-width: 800px;
+  height: 100%;
+}
+.about_paragraph {
+  margin-top: 15px;
+  line-height: 190%;
+}
+@media only screen and (max-width: 1050px) {
+  .about__wrapper {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about__wrapper {
+    width: 90%;
+  }
+}
