@@ -37,3 +37,25 @@
     padding-left: 25px;
   }
 }
+
+@media only screen and (max-width: 850px) {
+  .card {
+    min-height: 500px;
+  }
+  .card__image__wrapper {
+    height: 70%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .card__image__wrapper {
+    height: 55%;
+  }
+  .card {
+    min-height: 380px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .card__image__wrapper {
+    height: 40%;
+  }
+}

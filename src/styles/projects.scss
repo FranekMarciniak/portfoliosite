@@ -49,6 +49,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .projects__item {
+    max-width: 370px;
+    min-width: 300px;
+  }
 }
 @media only screen and (max-width: 550px) {
   .projects__item {

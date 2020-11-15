@@ -33,9 +33,16 @@ h3 {
   border-radius: 4px;
   margin-top: 15px;
 }
+.btn-small {
+  width: 125px;
+}
 .text--subtitle {
   font-size: 14px;
   padding-top: 5px;
+}
+.text--paragraph {
+  margin-top: 15px;
+  line-height: 190%;
 }
 @media only screen and (max-width: 600px) {
   body {

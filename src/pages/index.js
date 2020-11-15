@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Intro from "../components/Intro"
 import About from "../components/About"
 import Projects from "../components/Projects"
+import Contact from "../components/Contact"
 import "../styles/reset.css"
 import "../styles/global.scss"
 import SiteContext from "../context/siteState"
@@ -16,6 +17,7 @@ const IndexPage = () => {
         <Intro />
         <About />
         <Projects />
+        <Contact />
       </Layout>
     </SiteContext>
   )
