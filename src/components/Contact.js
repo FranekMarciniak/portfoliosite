@@ -2,29 +2,12 @@ import React from "react"
 import "../styles/contact.scss"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Contact() {
-  const query = useStaticQuery(
-    graphql`
-      query {
-        allMarkdownRemark(filter: { frontmatter: { id: { eq: "contact" } } }) {
-          edges {
-            node {
-              frontmatter {
-                title
-              }
-              rawMarkdownBody
-            }
-          }
-        }
-      }
-    `
-  )
-  const information = query.allMarkdownRemark.edges[0].node
+function Contact({ data }) {
   return (
     <div className="contact">
       <div className="contact__wrapper">
-        <h2>{information.frontmatter.title}</h2>
-        <p className="text--paragraph">{information.rawMarkdownBody}</p>
+        <h2>{data.title}</h2>
+        <p className="text--paragraph">{data.body}</p>
         <form action="" className="contact__form">
           <div className="contact__input__wrapper">
             <input type="text" placeholder="Name" className="contact__input" />
