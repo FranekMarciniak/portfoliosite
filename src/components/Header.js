@@ -16,13 +16,13 @@ const Header = () => {
         <nav className="header__nav">
           <ul className="header__nav__list">
             <li className="header__nav__list__item">
-              <a href="#">Home</a>{" "}
+              <Link to="/">Home</Link>
             </li>
             <li className="header__nav__list__item">
-              <a href="#">Projects</a>{" "}
+              <Link to="/projects">Projects</Link>
             </li>
             <li className="header__nav__list__item">
-              <a href="#">Notes</a>{" "}
+              <Link to="/notes">Notes</Link>
             </li>
           </ul>
         </nav>

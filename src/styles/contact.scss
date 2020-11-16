@@ -36,6 +36,9 @@ textarea {
   padding: 5px;
   border-radius: 4px;
 }
+input::before {
+  content: "";
+}
 .contact__button__wrapper {
   width: 280px;
   display: flex;

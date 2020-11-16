@@ -8,12 +8,7 @@ function Contact({ data }) {
       <div className="contact__wrapper">
         <h2>{data.title}</h2>
         <p className="text--paragraph">{data.body}</p>
-        <form
-          action=""
-          className="contact__form"
-          method="POST"
-          data-netlify="true"
-        >
+        <form action="" className="contact__form">
           <div className="contact__input__wrapper">
             <input type="text" placeholder="Name" className="contact__input" />
           </div>

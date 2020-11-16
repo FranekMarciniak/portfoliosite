@@ -42,7 +42,7 @@ const IndexPage = () => {
         <SEO title="Home" />
         <Intro data={data.find(blob => blob.id === "intro")} />
         <About data={data.find(blob => blob.id === "about")} />
-        <Projects />
+        <Projects data={[1, 2]} />
         <Skills data={data.find(blob => blob.id === "tech")} />
         <Contact data={data.find(blob => blob.id === "contact")} />
       </Layout>

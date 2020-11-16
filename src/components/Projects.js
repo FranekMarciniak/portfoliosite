@@ -2,8 +2,8 @@ import React from "react"
 import ProjectCard from "./ProjectCard"
 import "../styles/projects.scss"
 import "../styles/card.scss"
-function Projects() {
-  const repos = ["113", "123"]
+function Projects({ data }) {
+  const repos = data
   return (
     <section className="projects">
       <div className="projects__wrapper">

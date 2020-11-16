@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
+import Header from "./Header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -29,7 +29,20 @@ const Layout = ({ children }) => {
       <Header data={data} />
       <div>
         <main>{children}</main>
-        <footer></footer>
+        <footer
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "14px",
+            marginTop: "40px",
+            backgroundColor: "#1d1d1d",
+            padding: "10px",
+            letterSpacing: "1px",
+          }}
+        >
+          developed in Gatsby by Franek Marciniak more on the project here
+        </footer>
       </div>
     </>
   )

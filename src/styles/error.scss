@@ -1,0 +1,29 @@
+.error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  padding: 10px;
+  height: 70vh;
+}
+.error__wrapper {
+  width: 65%;
+  max-width: 800px;
+  height: 100%;
+
+  p,
+  h1 {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .error__wrapper {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .error__wrapper {
+    width: 90%;
+  }
+}
