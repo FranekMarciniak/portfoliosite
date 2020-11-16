@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 import "../styles/projects.scss"
 import "../styles/card.scss"
 function Projects() {
-  const repos = ["123", "123"]
+  const repos = ["113", "123"]
   return (
     <section className="projects">
       <div className="projects__wrapper">

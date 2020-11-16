@@ -4,8 +4,7 @@ import React from "react"
 import "../styles/header.scss"
 import { FaDev } from "react-icons/fa"
 
-const Header = data => {
-  console.log(data)
+const Header = () => {
   return (
     <header className="header">
       <div className="header__wrapper">

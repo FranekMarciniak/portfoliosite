@@ -1,7 +1,6 @@
 import React from "react"
 import Project from "../images/Project.jpg"
-function ProjectCard({ data }) {
-  console.log(data)
+function ProjectCard() {
   return (
     <div className="card">
       <div className="card__image__wrapper">

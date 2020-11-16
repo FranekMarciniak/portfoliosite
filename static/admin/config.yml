@@ -8,7 +8,7 @@ public_folder: /img
 collections:
   - name: "intro"
     label: "Intro"
-    folder: "content/intro"
+    folder: "src/content/intro"
     create: true
     slug: "Intro"
     editor:
@@ -18,7 +18,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "about"
     label: "About"
-    folder: "content/about"
+    folder: "src/content/about"
     create: true
     slug: "About"
     editor:
@@ -28,7 +28,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "tech"
     label: "Tech"
-    folder: "content/tech"
+    folder: "src/content/tech"
     create: true
     slug: "Tech"
     editor:
@@ -39,7 +39,7 @@ collections:
 
   - name: "contact"
     label: "Contact"
-    folder: "content/contact"
+    folder: "src/content/contact"
     create: true
     slug: "Contact"
     editor:

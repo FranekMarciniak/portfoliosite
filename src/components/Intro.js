@@ -1,17 +1,32 @@
 import React from "react"
 import "../styles/intro.scss"
 import Picture from "../images/blank-profile-picture.png"
+import { useStaticQuery, graphql } from "gatsby"
+import markdownToTxt from "markdown-to-txt"
 function Intro() {
+  const query = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(filter: { frontmatter: { id: { eq: "intro" } } }) {
+          edges {
+            node {
+              frontmatter {
+                title
+              }
+              rawMarkdownBody
+            }
+          }
+        }
+      }
+    `
+  )
+  const information = query.allMarkdownRemark.edges[0].node
   return (
     <section className="intro">
       <div className="intro__wrapper">
         <div className="intro__text__wrapper">
-          <h2>Hey, my name is Franek</h2>
-          <p className="intro__paragraph">
-            Thanks for visting my page! Below you can find information about me
-            and my projects. If you wanna contact me, shoot me an email. Have a
-            great day
-          </p>
+          <h2>{information.frontmatter.title}</h2>
+          <p className="intro__paragraph">{information.rawMarkdownBody}</p>
           <button className="btn btn--intro btn--secondary">My projects</button>
         </div>
         <div className="intro__photo_wrapper">

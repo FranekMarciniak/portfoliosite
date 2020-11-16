@@ -9,7 +9,6 @@ import Skills from "../components/Skills"
 import "../styles/reset.css"
 import "../styles/global.scss"
 import SiteContext from "../context/siteState"
-
 const IndexPage = () => {
   return (
     <SiteContext>

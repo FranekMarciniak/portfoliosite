@@ -21,7 +21,14 @@ module.exports = {
         path: `${__dirname}/src/content/`,
       },
     },
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        mediaTypes: [`text/markdown`, `text/x-markdown`],
+        path: `Portfolio-site/content/about/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -50,7 +57,9 @@ module.exports = {
         algorithm: "gzip",
       },
     },
-        'gatsby-plugin-netlify-cms'
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
+
     // {
     //   resolve: "gatsby-source-graphql",
     //   options: {
