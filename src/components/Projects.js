@@ -8,10 +8,12 @@ function Projects() {
     <section className="projects">
       <div className="projects__wrapper">
         <h2>Featured projects</h2>
-        <div className="someting">
+        <div className="projects__grid__wrapper">
           <div className="projects__grid">
             {repos.map(repo => (
-              <ProjectCard key={repo} />
+              <div className="projects__item__wrapper">
+                <ProjectCard key={repo} />
+              </div>
             ))}
           </div>
         </div>
