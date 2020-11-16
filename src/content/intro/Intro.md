@@ -1,5 +1,5 @@
 ---
-title: Hey, my name is Franek
+title: Hey, my name is Franciszek
 id: intro
 ---
 
