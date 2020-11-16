@@ -59,6 +59,22 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
+
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: "583a84ffe5e7c0599a899f2d78e3024a0e08268e",
+        variables: {},
+        graphQLQuery: `
+        query {
+          repository(owner:"torvalds",name:"linux"){
+            description
+          }
+        }
+        `,
+      },
+    },
+
     // {
     //   resolve: "gatsby-source-graphql",
     //   options: {

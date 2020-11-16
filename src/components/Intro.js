@@ -10,7 +10,7 @@ function Intro({ data }) {
         <div className="intro__text__wrapper">
           <h2>{data.title}</h2>
           <p className="intro__paragraph">{data.body}</p>
-          <Link to="/projects">
+          <Link to="/projectsPage">
             <button className="btn btn--intro btn--secondary">
               My projects
             </button>

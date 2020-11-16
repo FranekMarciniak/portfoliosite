@@ -6,6 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  scroll-behavior: smooth;
   color: rgba(255, 255, 255, 0.8);
 }
 h1,
@@ -45,6 +46,9 @@ h1 {
 .text--paragraph {
   margin-top: 15px;
   line-height: 190%;
+}
+.link--disabled {
+  pointer-events: none;
 }
 @media only screen and (max-width: 600px) {
   body {

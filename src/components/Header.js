@@ -19,10 +19,18 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="header__nav__list__item">
-              <Link to="/projects">Projects</Link>
+              <Link to="/projectsPage">Projects</Link>
             </li>
             <li className="header__nav__list__item">
-              <Link to="/notes">Notes</Link>
+              <Link
+                to="/notes"
+                style={{
+                  pointerEvents: "none",
+                  color: "rgba(255, 255, 255, 0.8)",
+                }}
+              >
+                Notes
+              </Link>
             </li>
           </ul>
         </nav>
