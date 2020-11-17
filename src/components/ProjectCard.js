@@ -1,10 +1,13 @@
 import React from "react"
 import Project from "../images/Project.jpg"
+import Image from "../components/image"
+import { Link } from "gatsby"
+
 function ProjectCard() {
   return (
     <div className="card">
       <div className="card__image__wrapper">
-        <img src={Project} alt="" />
+        <Image img={Project} />
       </div>
       <div className="card__text__wrapper">
         <h3>This is title</h3>

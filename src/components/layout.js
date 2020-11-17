@@ -39,6 +39,7 @@ const Layout = ({ children }) => {
             backgroundColor: "#1d1d1d",
             padding: "10px",
             letterSpacing: "1px",
+            textAlign: "center",
           }}
         >
           developed in Gatsby by Franek Marciniak more on the project here

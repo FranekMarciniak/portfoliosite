@@ -2,7 +2,7 @@ import React from "react"
 import "../styles/intro.scss"
 import Picture from "../images/blank-profile-picture.png"
 import { Link } from "gatsby"
-
+import Image from "./image"
 function Intro({ data }) {
   return (
     <section className="intro">
@@ -17,7 +17,7 @@ function Intro({ data }) {
           </Link>
         </div>
         <div className="intro__photo_wrapper">
-          <img src={Picture} alt="" />
+          <Image img={Picture} />
         </div>
       </div>
     </section>

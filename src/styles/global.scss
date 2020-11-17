@@ -50,6 +50,27 @@ h1 {
 .link--disabled {
   pointer-events: none;
 }
+.link--hovered {
+  position: relative;
+}
+.link--hovered::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  width: 0%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffc700;
+  transition: all 1s ease;
+  opacity: 0;
+}
+.link--hovered:hover:before {
+  content: "";
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.2) !important;
+}
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;

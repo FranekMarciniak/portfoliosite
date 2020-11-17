@@ -1,13 +1,24 @@
 .header {
   width: 100%;
   background-color: transparent;
-  height: 100px;
   display: flex;
   justify-content: center;
   color: white;
+  position: fixed;
+  top: 0;
+  height: 130px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.header--active {
+  height: 60px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #131415dc;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
 }
 .header__wrapper {
   width: 80%;
+  height: 100%;
   max-width: 1100px;
   display: flex;
   align-items: center;
