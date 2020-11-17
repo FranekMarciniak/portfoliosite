@@ -7,7 +7,7 @@ function ProjectCard() {
   return (
     <div className="card">
       <div className="card__image__wrapper">
-        <Image img={Project} />
+        <img src={Project} />
       </div>
       <div className="card__text__wrapper">
         <h3>This is title</h3>
@@ -18,8 +18,8 @@ function ProjectCard() {
         </p>
       </div>
       <div className="card__buttons">
-        <a href="#">Live demo</a>
-        <a href="#">View on github</a>
+        <Link href="#">Live demo</Link>
+        <Link href="#">View on github</Link>
       </div>
     </div>
   )
