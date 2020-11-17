@@ -1,12 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "../styles/header.scss"
 import { FaDev } from "react-icons/fa"
 
 const Header = () => {
   const [active, setActive] = useState(false)
-
   const onScroll = () => {
     if (window.scrollY >= 40) {
       setActive(true)
@@ -14,7 +13,9 @@ const Header = () => {
       setActive(false)
     }
   }
-  window.addEventListener("scroll", onScroll)
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll)
+  }, [])
   return (
     <header className={!active ? "header" : "header header--active"}>
       <div className="header__wrapper">
