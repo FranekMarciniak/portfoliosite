@@ -24,6 +24,7 @@ const Header = () => {
             <FaDev size="2.3rem" title="logo icon" />
           </span>
         </div>
+        <div></div>
         <nav className="header__nav">
           <ul className="header__nav__list" style={{ marginBottom: 0 }}>
             <li className="header__nav__list__item">
@@ -53,14 +54,6 @@ const Header = () => {
       </div>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

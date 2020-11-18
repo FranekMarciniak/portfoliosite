@@ -2,10 +2,10 @@ import React from "react"
 import ProjectCard from "./ProjectCard"
 import "../styles/projects.scss"
 import "../styles/card.scss"
-function Projects({ data }) {
+function Projects({ data, page }) {
   const repos = data
   return (
-    <section className="projects">
+    <section className={page === "whole" ? "projects whole" : "projects"}>
       <div className="projects__wrapper">
         <h2>Featured projects</h2>
         <div className="projects__grid__wrapper">

@@ -2,12 +2,17 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projects from "../components/Projects"
+import Header from "../components/Header"
+
 function projects() {
   return (
-    <Layout>
-      <SEO title="projects" />
-      <Projects data={[1, 2, 3, 4, 5]} />
-    </Layout>
+    <>
+      <Header />
+      <Layout>
+        <SEO title="projects" />
+        <Projects page="whole" data={[1, 2, 3, 4, 5]} />
+      </Layout>
+    </>
   )
 }
 

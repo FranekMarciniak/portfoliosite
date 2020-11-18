@@ -1,6 +1,12 @@
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 media_folder: static/img
 public_folder: /img
@@ -9,7 +15,7 @@ collections:
   - name: "intro"
     label: "Intro"
     folder: "src/content/intro"
-    create: true
+    create: false
     slug: "Intro"
     editor:
       preview: false
@@ -19,7 +25,7 @@ collections:
   - name: "about"
     label: "About"
     folder: "src/content/about"
-    create: true
+    create: false
     slug: "About"
     editor:
       preview: false
@@ -29,7 +35,7 @@ collections:
   - name: "tech"
     label: "Tech"
     folder: "src/content/tech"
-    create: true
+    create: false
     slug: "Tech"
     editor:
       preview: false
@@ -40,10 +46,24 @@ collections:
   - name: "contact"
     label: "Contact"
     folder: "src/content/contact"
-    create: true
+    create: false
     slug: "Contact"
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "project-card"
+    label: "Project cards"
+    folder: "src/content/cards"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{card}"
+    id: "card"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Github link", name: "Github", widget: "string" }
+      - { label: "Live link", name: "Live", widget: "string" }
+      - { label: "Image of project", name: "Image", widget: "image" }
