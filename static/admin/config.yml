@@ -58,13 +58,14 @@ collections:
     folder: "src/content/cards"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{card}"
-    id: "card"
     editor:
       preview: false
     fields:
+      - { label: "Project card", name: "display", widget: "boolean" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Developed in...", name: "Developed", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Github link", name: "Github", widget: "string" }
       - { label: "Live link", name: "Live", widget: "string" }
       - { label: "Image of project", name: "Image", widget: "image" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Fav", name: "Fav", widget: "boolean" }
