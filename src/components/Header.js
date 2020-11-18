@@ -14,6 +14,7 @@ const Header = () => {
     }
   }
   useEffect(() => {
+    onScroll()
     window.addEventListener("scroll", onScroll)
   }, [])
   return (
