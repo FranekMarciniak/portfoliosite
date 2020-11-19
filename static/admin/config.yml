@@ -63,4 +63,3 @@ collections:
       - { label: "Live link", name: "Live", widget: "string" }
       - { label: "Image of project", name: "Image", widget: "image" }
       - { label: "Fav", name: "fav", widget: "boolean" }
-      - { label: "Card", name: "card", widget: "boolean" }
