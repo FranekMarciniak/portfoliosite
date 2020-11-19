@@ -68,9 +68,5 @@ collections:
       - { label: "Github link", name: "Github", widget: "string" }
       - { label: "Live link", name: "Live", widget: "string" }
       - { label: "Image of project", name: "Image", widget: "image" }
-<<<<<<< HEAD
       - { label: "Fav", name: "fav", widget: "boolean" }
       - { label: "Card", name: "card", widget: "boolean" }
-=======
-      - { label: "Fav", name: "Fav", widget: "boolean" }
->>>>>>> d312ebfc3ebfe9359389d37c52f9e85ab47512e0

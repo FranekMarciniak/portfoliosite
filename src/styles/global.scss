@@ -61,7 +61,7 @@ h1 {
   height: 4px;
   border-radius: 4px;
   background-color: #ffc700;
-  transition: all 1s ease;
+  transition: all 0.7s ease;
   opacity: 0;
 }
 .link--hovered:hover:before {
@@ -74,6 +74,7 @@ h1 {
 .whole {
   margin-top: 160px;
 }
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;

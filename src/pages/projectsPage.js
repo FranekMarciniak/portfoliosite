@@ -10,7 +10,7 @@ function projects() {
       <Header />
       <Layout>
         <SEO title="projects" />
-        <Projects page="whole" data={[1, 2, 3, 4, 5]} />
+        <Projects page="whole" fav={true} data={[1, 2, 3, 4, 5]} />
       </Layout>
     </>
   )

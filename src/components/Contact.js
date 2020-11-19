@@ -10,18 +10,33 @@ function Contact({ data }) {
         <p className="text--paragraph">{data.body}</p>
         <form action="" className="contact__form">
           <div className="contact__input__wrapper">
-            <input type="text" placeholder="Name" className="contact__input" />
+            <input type="text" className="contact__input" required />
+            <label htmlFor="name" className="input__label">
+              Name
+            </label>
           </div>
           <div className="contact__input__wrapper">
-            <input type="text" placeholder="Email" className="contact__input" />
+            <input
+              name="email"
+              type="text"
+              className="contact__input"
+              required
+            />
+            <label htmlFor="email" className="input__label">
+              Email
+            </label>
           </div>
           <div className="contact__input__wrapper">
             <textarea
               type="text"
               className="contact__input"
               style={{ height: "115px" }}
-              placeholder="Message"
+              name="message"
+              required
             />
+            <label htmlFor="message" className="input__label textarea--label">
+              Message
+            </label>
           </div>
           <div
             style={{

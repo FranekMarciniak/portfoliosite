@@ -14,7 +14,9 @@
   flex-direction: column;
 }
 .contact__input__wrapper {
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -26,23 +28,51 @@
   margin-bottom: 15px;
 }
 .contact__form {
-  margin-top: 25px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-rows: 50px 50px 100px 50px;
+  grid-row-gap: 23px;
+  justify-content: center;
 }
-input,
-textarea {
+.contact__input,
+.contact__area {
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
   padding: 5px;
   border-radius: 4px;
+  resize: none;
 }
+
 input::before {
   content: "";
 }
+
 .contact__button__wrapper {
   width: 280px;
   display: flex;
   justify-content: flex-end;
+}
+.input__label {
+  position: absolute;
+  left: 8px;
+  top: 18px;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.15s;
+  z-index: 3;
+}
+.textarea--label {
+  top: 13px;
+}
+.contact__input:focus + .input__label,
+.contact__input:valid + .input__label {
+  left: 8px;
+  top: -17px;
+}
+.contact__input:focus {
+  box-shadow: none;
+  outline: none;
 }
 @media only screen and (max-width: 1050px) {
   .contact__wrapper {
@@ -53,17 +83,22 @@ input::before {
   .contact__wrapper {
     width: 90%;
   }
-  .contact__input {
-    width: 342px;
-  }
 }
 @media only screen and (max-width: 850px) {
-  .contact__input {
-    width: 65%;
-  }
 }
 @media only screen and (max-width: 600px) {
   .contact__input {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .contact__input {
+    width: 200px;
+    height: 50px;
+  }
+  .contact__button__wrapper {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
