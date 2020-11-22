@@ -1,5 +1,5 @@
 ---
-title: This is tech I use
+title: Tech I use
 id: tech
 ---
-This is some (but not all) of the tech I use in my personal projects
+This is some of the tech I use:
