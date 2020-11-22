@@ -1,6 +1,5 @@
 ---
-title: This is tech
+title: This is tech I use
 id: tech
 ---
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt vero porro quae quidem pariatur vero porro quae quidem pariatur
+This is some (but not all) of the tech I use in my personal projects
