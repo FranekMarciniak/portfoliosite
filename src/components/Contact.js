@@ -16,21 +16,11 @@ function Contact({ data }) {
         <h2>{data.title}</h2>
         <p className="text--paragraph">{data.body}</p>
         <form
-          action=""
           className="contact__form"
+          name="contact-form"
+          method="post"
           data-netlify="true"
-          onSubmit={e => {
-            fetch("/", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-              },
-              body: encode({ "form-name": "contact", ...state.data }),
-            })
-              .then(() => navigate("/projectPage/")))
-              .catch(error => alert(error))
-            e.preventDefault()
-          }}
+          data-netlify-honeypot="bot-field"
         >
           <div className="contact__input__wrapper">
             <input
