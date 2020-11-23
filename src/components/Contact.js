@@ -13,9 +13,18 @@ function Contact({ data }) {
         <form
           action=""
           className="contact__form"
-          name="Contact Form"
-          method="POST"
-          data-netlify="true"
+          onSubmit={e => {
+            e.preventDefault()
+            fetch("/", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: JSON.stringify(currentState),
+            })
+              .then(() => console.log("Form successfully submitted"))
+              .catch(error => alert(error))
+          }}
         >
           <div className="contact__input__wrapper">
             <input
