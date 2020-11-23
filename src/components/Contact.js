@@ -18,6 +18,7 @@ function Contact({ data }) {
         <form
           action=""
           className="contact__form"
+          data-netlify="true"
           onSubmit={e => {
             fetch("/", {
               method: "POST",
@@ -26,7 +27,7 @@ function Contact({ data }) {
               },
               body: encode({ "form-name": "contact", ...state.data }),
             })
-              .then(() => console.log("Form successfully submitted"))
+              .then(() => navigate("/projectPage/")))
               .catch(error => alert(error))
             e.preventDefault()
           }}
