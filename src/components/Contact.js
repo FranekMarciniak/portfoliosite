@@ -17,11 +17,13 @@ function Contact({ data }) {
         <p className="text--paragraph">{data.body}</p>
         <form
           className="contact__form"
-          name="contact-form"
+          name="contactform"
           method="post"
+          action="/404"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="bot-field" />
           <div className="contact__input__wrapper">
             <input
               type="text"
