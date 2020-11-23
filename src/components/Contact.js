@@ -4,6 +4,11 @@ import { SiteContext } from "../context/siteState"
 function Contact({ data }) {
   const siteContext = useContext(SiteContext)
   const { setName, setMessage, setEmail, currentState } = siteContext
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
 
   return (
     <div className="contact">
@@ -14,16 +19,16 @@ function Contact({ data }) {
           action=""
           className="contact__form"
           onSubmit={e => {
-            e.preventDefault()
             fetch("/", {
               method: "POST",
               headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
               },
-              body: JSON.stringify(currentState),
+              body: encode({ "form-name": "contact", ...state.data }),
             })
               .then(() => console.log("Form successfully submitted"))
               .catch(error => alert(error))
+            e.preventDefault()
           }}
         >
           <div className="contact__input__wrapper">
