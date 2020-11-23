@@ -1,4 +1,4 @@
-import { SET_EMAIL, SET_ERROR, SET_MESSAGE, SET_NAME } from "./types.js"
+import { SET_EMAIL, SET_MESSAGE, SET_NAME } from "./types.js"
 import React, { useReducer, createContext } from "react"
 import siteReducer from "./siteReducer"
 export const SiteContext = createContext()

@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import "../styles/contact.scss"
-import { useStaticQuery, graphql } from "gatsby"
 import { SiteContext } from "../context/siteState"
 function Contact({ data }) {
   const siteContext = useContext(SiteContext)
@@ -17,6 +16,9 @@ function Contact({ data }) {
           onSubmit={e => {
             e.preventDefault()
           }}
+          name="Contact Form"
+          method="POST"
+          data-netlify="true"
         >
           <div className="contact__input__wrapper">
             <input

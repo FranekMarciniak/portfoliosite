@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import "../styles/header.scss"
 import { FaDev } from "react-icons/fa"
@@ -22,7 +21,7 @@ const Header = () => {
       <div className="header__wrapper">
         <div className="header__logo__wrapper">
           <span>
-            <FaDev size="2.3rem" title="logo icon" />
+            <FaDev title="logo icon" />
           </span>
         </div>
         <div></div>

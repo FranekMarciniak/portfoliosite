@@ -35,7 +35,7 @@ function Projects({ page, fav, data }) {
   } else {
     repos = query.allMarkdownRemark.edges
   }
-  console.log(repos)
+
   return (
     <section className={page === "whole" ? "projects whole" : "projects"}>
       <div className="projects__wrapper">

@@ -1,4 +1,4 @@
-import { SET_NAME, SET_EMAIL, SET_MESSAGE, SET_ERROR } from "./types.js"
+import { SET_NAME, SET_EMAIL, SET_MESSAGE } from "./types.js"
 // eslint-disable-next-line
 export default (state, action) => {
   switch (action.type) {
@@ -25,6 +25,10 @@ export default (state, action) => {
           ...state.data,
           message: action.payload,
         },
+      }
+    default:
+      return {
+        ...state,
       }
   }
 }

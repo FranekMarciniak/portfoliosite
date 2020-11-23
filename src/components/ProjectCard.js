@@ -1,12 +1,11 @@
 import React from "react"
-import Project from "../images/Project.jpg"
 import { Link } from "gatsby"
 
 function ProjectCard({ repo }) {
   return (
     <div className="card">
       <div className="card__image__wrapper">
-        <img src={repo.frontmatter.Image} />
+        <img src={repo.frontmatter.Image} alt="live project" />
       </div>
       <div className="card__text__wrapper">
         <h3>{repo.frontmatter.title}</h3>
@@ -14,8 +13,8 @@ function ProjectCard({ repo }) {
         <p className="card__text">{repo.rawMarkdownBody}</p>
       </div>
       <div className="card__buttons">
-        <Link href={repo.frontmatter.Github}>Live demo</Link>
-        <Link href={repo.frontmatter.Live}>View on github</Link>
+        <Link to={repo.frontmatter.Github}>Live demo</Link>
+        <Link to={repo.frontmatter.Live}>View on github</Link>
       </div>
     </div>
   )
