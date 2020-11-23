@@ -13,9 +13,6 @@ function Contact({ data }) {
         <form
           action=""
           className="contact__form"
-          onSubmit={e => {
-            e.preventDefault()
-          }}
           name="Contact Form"
           method="POST"
           data-netlify="true"
