@@ -44,7 +44,10 @@ const IndexPage = () => {
         <SEO title="Home" />
         <Intro data={data.find(blob => blob.id === "intro")} />
         <About data={data.find(blob => blob.id === "about")} />
-        <Projects data={[1, 2]} fav={true} />
+        <Projects
+          fav={true}
+          data={data.find(blob => blob.id === "projects-info")}
+        />
         <Skills data={data.find(blob => blob.id === "tech")} />
         <Contact data={data.find(blob => blob.id === "contact")} />
       </Layout>

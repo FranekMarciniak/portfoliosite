@@ -4,7 +4,7 @@ import "../styles/projects.scss"
 import "../styles/card.scss"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Projects({ data, page, fav }) {
+function Projects({ page, fav, data }) {
   const query = useStaticQuery(
     graphql`
       query {
@@ -39,7 +39,8 @@ function Projects({ data, page, fav }) {
   return (
     <section className={page === "whole" ? "projects whole" : "projects"}>
       <div className="projects__wrapper">
-        <h2>Featured projects</h2>
+        <h2>{data.title}</h2>
+        <p className="text--paragraph">{data.body}</p>
         <div className="projects__grid__wrapper">
           <div className="projects__grid">
             {repos.map(repo => (

@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/skills.scss"
-import { FaJsSquare, FaReact, FaSass } from "react-icons/fa"
+import { FaJsSquare, FaReact, FaSass, FaJava } from "react-icons/fa"
 import { GrGatsbyjs } from "react-icons/gr"
 
 function Skills({ data }) {
@@ -15,29 +15,25 @@ function Skills({ data }) {
           <div className="skills__list">
             <div className="skill__card">
               <FaJsSquare
-                size="2.5rem"
                 title="logo icon"
                 value={{ style: { color: "black" } }}
               />
+            </div>
+            <div className="skill__card">
+              <FaJava title="logo icon" value={{ style: { color: "black" } }} />
             </div>
             <div className="skill__card">
               <FaReact
-                size="2.5rem"
                 title="logo icon"
                 value={{ style: { color: "black" } }}
               />
             </div>
             <div className="skill__card">
-              <FaSass
-                size="2.5rem"
-                title="logo icon"
-                value={{ style: { color: "black" } }}
-              />
+              <FaSass title="logo icon" value={{ style: { color: "black" } }} />
             </div>
             <div className="skill__card">
               {" "}
               <GrGatsbyjs
-                size="2.5rem"
                 title="logo icon"
                 value={{ style: { color: "black" } }}
               />

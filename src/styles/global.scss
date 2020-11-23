@@ -73,8 +73,11 @@ h1 {
 }
 .whole {
   margin-top: 160px;
+  height: 100vh;
 }
-
+input:empty {
+  outline: none;
+}
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
