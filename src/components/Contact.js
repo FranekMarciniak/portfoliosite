@@ -19,7 +19,7 @@ function Contact({ data }) {
           className="contact__form"
           name="contactform"
           method="post"
-          action="/404"
+          action="/succses"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
