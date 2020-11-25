@@ -7,7 +7,6 @@ import Projects from "../components/Projects"
 import Contact from "../components/Contact"
 import Skills from "../components/Skills"
 import "../styles/reset.css"
-import SiteContext from "../context/siteState"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/Header"
 import "../styles/global.scss"
@@ -38,7 +37,7 @@ const IndexPage = () => {
     }
   })
   return (
-    <SiteContext>
+    <>
       <Header />
       <Layout>
         <SEO title="Home" />
@@ -51,7 +50,7 @@ const IndexPage = () => {
         <Skills data={data.find(blob => blob.id === "tech")} />
         <Contact data={data.find(blob => blob.id === "contact")} />
       </Layout>
-    </SiteContext>
+    </>
   )
 }
 
