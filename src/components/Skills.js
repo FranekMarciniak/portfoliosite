@@ -15,23 +15,20 @@ function Skills({ data }) {
           <div className="skills__list">
             <div className="skill__card">
               <FaJsSquare
-                title="logo icon"
+                title="javascript"
                 value={{ style: { color: "black" } }}
               />
             </div>
             <div className="skill__card">
-              <FaJava title="logo icon" value={{ style: { color: "black" } }} />
+              <FaJava title="java" value={{ style: { color: "black" } }} />
             </div>
             <div className="skill__card">
-              <FaReact
-                title="logo icon"
-                value={{ style: { color: "black" } }}
-              />
+              <FaReact title="react" value={{ style: { color: "black" } }} />
             </div>
             <div className="skill__card">
               {" "}
               <GrGatsbyjs
-                title="logo icon"
+                title="gatsbyjs"
                 value={{ style: { color: "black" } }}
               />
             </div>
