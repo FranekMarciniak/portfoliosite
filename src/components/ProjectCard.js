@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import img from "../content/projects/site.png"
 function ProjectCard({ repo }) {
   return (
     <div className="card">
@@ -13,8 +13,8 @@ function ProjectCard({ repo }) {
         <p className="card__text">{repo.rawMarkdownBody}</p>
       </div>
       <div className="card__buttons">
-        <Link to={repo.frontmatter.Github}>Live demo</Link>
-        <Link to={repo.frontmatter.Live}>View on github</Link>
+        <Link to={repo.frontmatter.Live}>Live demo</Link>
+        <Link to={repo.frontmatter.Github}>View on github</Link>
       </div>
     </div>
   )
