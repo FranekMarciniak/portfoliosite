@@ -6,7 +6,6 @@
     <a href="https://franek.wtf">See it live</a>
   </p>
 </p>
-![Site live](https://github.com/FranekMarciniak/portfoliosite/blob/main/site.png?raw=true)
 
 <details open="open">
   <ol>
