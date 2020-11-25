@@ -1,4 +1,4 @@
-import { SET_EMAIL, SET_MESSAGE, SET_NAME } from "./types.js"
+import {} from "./types.js"
 import React, { useReducer, createContext } from "react"
 import siteReducer from "./siteReducer"
 export const SiteContext = createContext()
@@ -13,37 +13,8 @@ function SiteState(props) {
     error: {},
   }
   const [state, dispatch] = useReducer(siteReducer, initialState)
-  const setName = text => {
-    dispatch({
-      type: SET_NAME,
-      payload: text,
-    })
-  }
-  const setEmail = text => {
-    dispatch({
-      type: SET_EMAIL,
-      payload: text,
-    })
-  }
-  const setMessage = text => {
-    dispatch({
-      type: SET_MESSAGE,
-      payload: text,
-    })
-  }
 
-  return (
-    <Provider
-      value={{
-        setName,
-        setEmail,
-        setMessage,
-        currentState: state,
-      }}
-    >
-      {props.children}
-    </Provider>
-  )
+  return <Provider value={{}}>{props.children}</Provider>
 }
 
 export default SiteState
