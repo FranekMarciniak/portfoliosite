@@ -2,5 +2,4 @@
 title: Featured projects
 id: projects-info
 ---
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt vero porro quae quidem pariatur vero porro quae quidem pariatur
+Here are some projects I've been working on lately:
