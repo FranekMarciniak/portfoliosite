@@ -1,6 +1,5 @@
 ---
-title: Work with me
+title: Contact me!
 id: contact
 ---
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in velit, totam vero saepe consectetur harum ducimus obcaecati odio illo explicabo!
+I'm looking for all kinds of opportunities! From internships to freelance projects or if you just want to ask me something, feel free to contact me. I will get back to you asap
