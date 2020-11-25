@@ -6,7 +6,7 @@
     <a href="https://franek.wtf">See it live</a>
   </p>
 </p>
-![Site live](./site.png)
+![Site live](https://github.com/FranekMarciniak/portfoliosite/blob/main/site.png)
 
 <details open="open">
   <ol>
@@ -19,7 +19,6 @@
      <li><a href="#what-i-learned">What I learned</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#thanks-to"></a></li>
   </ol>
 </details>
 
