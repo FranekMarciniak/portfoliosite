@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import img from "../content/projects/site.png"
 function ProjectCard({ repo }) {
   return (
     <div className="card">
