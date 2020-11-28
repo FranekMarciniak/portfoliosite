@@ -3,7 +3,7 @@
   <p align="center">
     My first portfolio site to showcase my projects    <br />
     <br />
-    <a href="https://franek.wtf">See it live</a>
+    <a href="https://franekmarciniak.pl">See it live</a>
   </p>
 </p>
 
@@ -51,7 +51,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Franciszek Marciniak - prostyfranek@protonmail.com
+Franciszek Marciniak - contact@franekmarciniak.pl
 
 ## Thanks to:
 
