@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/skills.scss"
-import { FaJsSquare, FaReact, FaJava } from "react-icons/fa"
+import { FaJsSquare, FaReact, FaPython } from "react-icons/fa"
 import { GrGatsbyjs } from "react-icons/gr"
 
 function Skills({ data }) {
@@ -20,7 +20,7 @@ function Skills({ data }) {
               />
             </div>
             <div className="skill__card">
-              <FaJava title="java" value={{ style: { color: "black" } }} />
+              <Python title="python" value={{ style: { color: "black" } }} />
             </div>
             <div className="skill__card">
               <FaReact title="react" value={{ style: { color: "black" } }} />
