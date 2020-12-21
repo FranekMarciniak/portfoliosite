@@ -20,7 +20,7 @@ function Skills({ data }) {
               />
             </div>
             <div className="skill__card">
-              <Python title="python" value={{ style: { color: "black" } }} />
+              <FaPython title="python" value={{ style: { color: "black" } }} />
             </div>
             <div className="skill__card">
               <FaReact title="react" value={{ style: { color: "black" } }} />
