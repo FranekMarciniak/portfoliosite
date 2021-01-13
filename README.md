@@ -45,9 +45,6 @@ Technologies I used to develop this project
 I learned from this project a lot! Starting at zero knowledge of GatsbyJS and a basic understanding of react, I think I have a good grasp of how things are working. Also, this was the first project where I used CMS of any kind, I've picked netlify cms because of its great documentation and a great connection with gatsby graphql API. Speking of graphql, this was my first encounter with graphql, and I absolutely love it! I see why so many big companies are starting to use Graphql instead of rest API.
 If I would change something maybe I would build this site with styled-components instead of SASS, but other than that, I think the site looks and feels great. I can easily say I'm proud of it.
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
