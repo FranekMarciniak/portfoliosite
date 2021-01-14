@@ -21,21 +21,6 @@ const Layout = ({ children }) => {
       {/* <Header data={data} /> */}
       <div>
         <main>{children}</main>
-        <footer
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            fontSize: "14px",
-            marginTop: "40px",
-            backgroundColor: "#1d1d1d",
-            padding: "10px",
-            letterSpacing: "1px",
-            textAlign: "center",
-          }}
-        >
-          developed in Gatsby by Franek Marciniak more on the project here
-        </footer>
       </div>
     </>
   )

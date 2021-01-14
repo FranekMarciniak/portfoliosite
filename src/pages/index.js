@@ -49,6 +49,21 @@ const IndexPage = () => {
         />
         <Skills data={data.find(blob => blob.id === "tech")} />
         <Contact data={data.find(blob => blob.id === "contact")} />
+        <footer
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "14px",
+            backgroundColor: "#1d1d1d",
+            padding: "10px",
+            marginTop: "50px",
+            letterSpacing: "1px",
+            textAlign: "center",
+          }}
+        >
+          developed in Gatsby by Franek Marciniak more on the project here
+        </footer>
       </Layout>
     </>
   )

@@ -30,12 +30,12 @@ function Projects({ page, fav, data }) {
   let repos
   if (fav === true) {
     repos = query.allMarkdownRemark.edges.filter(repo => {
-      return repo.node.frontmatter.fav !== true
+      return repo.node.frontmatter.Fav === true
     })
   } else {
     repos = query.allMarkdownRemark.edges
   }
-
+  console.log(repos)
   return (
     <section className={page === "whole" ? "projects whole" : "projects"}>
       <div className="projects__wrapper">
@@ -43,8 +43,8 @@ function Projects({ page, fav, data }) {
         <p className="text--paragraph">{data.body}</p>
         <div className="projects__grid__wrapper">
           <div className="projects__grid">
-            {repos.map(repo => (
-              <div className="projects__item__wrapper">
+            {repos.map((repo, index) => (
+              <div className="projects__item__wrapper" key={index}>
                 <ProjectCard repo={repo.node} />
               </div>
             ))}

@@ -10,7 +10,22 @@ function projects() {
       <Header />
       <Layout>
         <SEO title="projects" />
-        <Projects page="whole" fav={true} data={[1, 2, 3, 4, 5]} />
+        <Projects page="whole" fav={false} data={[1, 2, 3, 4, 5]} />
+        <footer
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "14px",
+            backgroundColor: "#1d1d1d",
+            padding: "10px",
+            marginTop: "350px",
+            letterSpacing: "1px",
+            textAlign: "center",
+          }}
+        >
+          developed in Gatsby by Franek Marciniak more on the project here
+        </footer>
       </Layout>
     </>
   )
