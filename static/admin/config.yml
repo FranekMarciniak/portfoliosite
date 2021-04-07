@@ -73,3 +73,15 @@ collections:
       - { label: "Live link", name: "Live", widget: "string" }
       - { label: "Image of project", name: "Image", widget: "image" }
       - { label: "Fav", name: "fav", widget: "boolean" }
+    - name: "blog-post"
+    label: "Blog post"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{card}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Blog post title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Fav", name: "fav", widget: "boolean" }

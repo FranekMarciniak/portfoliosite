@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Intro from "../components/Intro"
 import About from "../components/About"
 import Projects from "../components/Projects"
+import WhatAmIDoing from "../components/WhatamIDoing"
 import Contact from "../components/Contact"
 import Skills from "../components/Skills"
 import "../styles/reset.css"
@@ -43,11 +44,12 @@ const IndexPage = () => {
         <SEO title="Home" />
         <Intro data={data.find(blob => blob.id === "intro")} />
         <About data={data.find(blob => blob.id === "about")} />
-        <Projects
+        {/* <Projects
           fav={true}
           data={data.find(blob => blob.id === "projects-info")}
-        />
+        /> */}
         <Skills data={data.find(blob => blob.id === "tech")} />
+        <WhatAmIDoing data={data.find(blob => blob.id === "about")} />
         <Contact data={data.find(blob => blob.id === "contact")} />
         <footer
           style={{
