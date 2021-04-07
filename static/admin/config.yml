@@ -73,7 +73,7 @@ collections:
       - { label: "Live link", name: "Live", widget: "string" }
       - { label: "Image of project", name: "Image", widget: "image" }
       - { label: "Fav", name: "fav", widget: "boolean" }
-    - name: "blog-post"
+  - name: "blog-post"
     label: "Blog post"
     folder: "src/content/posts"
     create: true
@@ -85,3 +85,4 @@ collections:
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Fav", name: "fav", widget: "boolean" }
+      - { label: "Display this post", name: "post", widget: "boolean" }

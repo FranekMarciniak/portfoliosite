@@ -6,10 +6,10 @@ function About({ data }) {
     <section className="about">
       <div className="about__wrapper">
         <h2>Things I'm working on </h2>
-        <p
-          className="text--paragraph"
-          dangerouslySetInnerHTML={{ __html: data.body }}
-        ></p>
+        <p className="text--paragraph">
+          Here are some posts about my recent and current projects:
+        </p>
+        <h4>In progress.....</h4>
       </div>
     </section>
   )
