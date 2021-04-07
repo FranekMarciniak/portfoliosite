@@ -19,7 +19,7 @@ function projects() {
             fontSize: "14px",
             backgroundColor: "#1d1d1d",
             padding: "10px",
-            marginTop: "350px",
+            marginTop: "450px",
             letterSpacing: "1px",
             textAlign: "center",
           }}
