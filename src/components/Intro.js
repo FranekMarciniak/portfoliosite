@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/intro.scss"
-import Picture from "../images/blank-profile-picture.png"
+import Picture from "../images/profile_pic.jpg"
 import { Link } from "gatsby"
 import Image from "./image"
 function Intro({ data }) {
