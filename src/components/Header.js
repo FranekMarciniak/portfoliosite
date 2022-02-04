@@ -33,7 +33,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="header__nav__list__item">
-              <Link to="/projectsPage" className="link--hovered">
+              <Link to="/projects" className="link--hovered">
                 Projects
               </Link>
             </li>
