@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 import "../styles/header.scss"
-import { FaDev } from "react-icons/fa"
+import { FaCode } from "react-icons/fa"
 
 const Header = () => {
   const [active, setActive] = useState(false)
@@ -21,7 +21,7 @@ const Header = () => {
       <div className="header__wrapper">
         <div className="header__logo__wrapper">
           <span>
-            <FaDev title="logo icon" />
+            <FaCode title="logo icon" />
           </span>
         </div>
         <div></div>
